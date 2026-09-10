@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sportwear | Catálogo Digital</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #f4f6f9; color: #333; padding-bottom: 50px; }
+        header { background-color: #111; color: #fff; text-align: center; padding: 30px 20px; margin-bottom: 30px; }
+        header h1 { font-size: 2.5rem; text-transform: uppercase; letter-spacing: 2px; color: #00ff66; }
+        header p { margin-top: 5px; color: #ccc; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        .grid-produtos { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+        .card-produto { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 6px 15px rgba(0,0,0,0.05); display: flex; flex-direction: column; }
+        .imagem-container { width: 100%; height: 320px; background-color: #eee; position: relative; }
+        .imagem-container img { width: 100%; height: 100%; object-fit: cover; display: block; }
+        .tag-promocao { position: absolute; top: 15px; left: 15px; background-color: #ff3333; color: white; padding: 5px 12px; font-weight: bold; border-radius: 20px; font-size: 0.85rem; text-transform: uppercase; z-index: 10; }
+        .conteudo-produto { padding: 20px; display: flex; flex-direction: column; flex-grow: 1; }
+        .titulo-produto { font-size: 1.3rem; margin-bottom: 8px; color: #111; }
+        .descricao-produto { font-size: 0.9rem; color: #666; line-height: 1.4; margin-bottom: 15px; }
+        .precos { margin-bottom: 15px; }
+        .preco-de { font-size: 0.9rem; color: #999; text-decoration: line-through; }
+        .preco-por { font-size: 1.6rem; color: #111; font-weight: bold; }
+        .secao-tamanhos { margin-bottom: 20px; }
+        .secao-tamanhos label { font-size: 0.85rem; color: #444; font-weight: bold; display: block; margin-bottom: 8px; }
+        .lista-tamanhos { display: flex; gap: 8px; }
+        .tam-opcao { width: 35px; height: 35px; border: 1px solid #ddd; display: flex; align-items: center; justify-content: center; font-size: 0.85rem; font-weight: bold; border-radius: 4px; color: #aaa; background-color: #fafafa; }
+        .tam-opcao.disponivel { border-color: #111; color: #111; background-color: #fff; box-shadow: 0 0 0 2px #111; }
+        .aviso-estoque { font-size: 0.8rem; color: #d97706; margin-top: 5px; font-weight: 500; }
+        .btn-comprar { display: block; text-align: center; background-color: #25D366; color: white; text-decoration: none; padding: 12px; border-radius: 8px; font-weight: bold; margin-top: auto; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Sportwear</h1>
+        <p>Camisas Importadas Dry Fit Premium</p>
+    </header>
+
+    <div class="container">
+        <div class="grid-produtos">
+
+            <!-- ESPANHA -->
+            <div class="card-produto">
+                <div class="imagem-container">
+                    <span class="tag-promocao">Oferta</span>
+                    <img src="./espanha.jpeg" alt="Camisa Espanha Titular">
+                </div>
+                <div class="conteudo-produto">
+                    <h2 class="titulo-produto">Camisa Espanha Titular</h2>
+                    <p class="descricao-produto">Tecido Dry Fit premium, altamente respirável. Modelo com escudo e patrocínio totalmente bordados em alta definição.</p>
+                    <div class="precos"><div class="preco-de">R$ 100,00</div><div class="preco-por">R$ 79,99</div></div>
+                    <div class="secao-tamanhos">
+                        <label>Tamanho:</label>
+                        <div class="lista-tamanhos">
+                            <div class="tam-opcao">P</div><div class="tam-opcao">M</div><div class="tam-opcao disponivel">G</div><div class="tam-opcao">GG</div>
+                        </div>
+                        <div class="aviso-estoque">⚠️ Última unidade disponível no tamanho G</div>
+                    </div>
+                    <a href="https://wa.me." target="_blank" class="btn-comprar">Comprar via WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- CROÁCIA -->
+            <div class="card-produto">
+                <div class="imagem-container">
+                    <span class="tag-promocao">Oferta</span>
+                    <img src="./croacia.jpeg" alt="Camisa Croácia Titular">
+                </div>
+                <div class="conteudo-produto">
+                    <h2 class="titulo-produto">Camisa Croácia Titular</h2>
+                    <p class="descricao-produto">Tecido Dry Fit premium, altamente respirável. Modelo com escudo e patrocínio totalmente bordados em alta definição.</p>
+                    <div class="precos"><div class="preco-de">R$ 100,00</div><div class="preco-por">R$ 79,99</div></div>
+                    <div class="secao-tamanhos">
+                        <label>Tamanho:</label>
+                        <div class="lista-tamanhos">
+                            <div class="tam-opcao">P</div><div class="tam-opcao">M</div><div class="tam-opcao disponivel">G</div><div class="tam-opcao">GG</div>
+                        </div>
+                        <div class="aviso-estoque">⚠️ Última unidade disponível no tamanho G</div>
+                    </div>
+                    <a href="https://wa.me." target="_blank" class="btn-comprar">Comprar via WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- VASCO -->
+            <div class="card-produto">
+                <div class="imagem-container">
+                    <span class="tag-promocao">Oferta</span>
+                    <img src="./vasco.jpeg" alt="Camisa Vasco Oficial">
+                </div>
+                <div class="conteudo-produto">
+                    <h2 class="titulo-produto">Camisa Vasco Oficial Black</h2>
+                    <p class="descricao-produto">Tecido Dry Fit premium, altamente respirável. Modelo com escudo e patrocínio totalmente bordados em alta definição.</p>
+                    <div class="precos"><div class="preco-de">R$ 100,00</div><div class="preco-por">R$ 79,99</div></div>
+                    <div class="secao-tamanhos">
+                        <label>Tamanho:</label>
+                        <div class="lista-tamanhos">
+                            <div class="tam-opcao">P</div><div class="tam-opcao disponivel">M</div><div class="tam-opcao">G</div><div class="tam-opcao">GG</div>
+                        </div>
+                        <div class="aviso-estoque">⚠️ Última unidade disponível no tamanho M</div>
+                    </div>
+                    <a href="https://wa.me." target="_blank" class="btn-comprar">Comprar via WhatsApp</a>
+                </div>
+            </div>
+
+            <!-- PALMEIRAS -->
+            <div class="card-produto">
+                <div class="imagem-container">
+                    <span class="tag-promocao">Oferta</span>
+                    <img src="./palmeiras.jpeg" alt="Camisa Palmeiras Branca">
+                </div>
+                <div class="conteudo-produto">
+                    <h2 class="titulo-produto">Camisa Palmeiras Reserva</h2>
+                    <p class="descricao-produto">Tecido Dry Fit premium, altamente respirável. Modelo com escudo e patrocínio totalmente bordados em alta definição.</p>
+                    <div class="precos"><div class="preco-de">R$ 100,00</div><div class="preco-por">R$ 79,99</div></div>
+                    <div class="secao-tamanhos">
+                        <label>Tamanho:</label>
+                        <div class="lista-tamanhos">
+                            <div class="tam-opcao">P</div><div class="tam-opcao">M</div><div class="tam-opcao">G</div><div class="tam-opcao disponivel">GG</div>
+                        </div>
+                        <div class="aviso-estoque">⚠️ Última unidade disponível no tamanho GG</div>
+                    </div>
+                    <a href="https://wa.me." target="_blank" class="btn-comprar">Comprar via WhatsApp</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
