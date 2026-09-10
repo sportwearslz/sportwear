@@ -33,65 +33,122 @@
     </style>
 </head>
 <body>
+
     <header>
         <h1>Sportwear</h1>
         <p>Camisas Importadas Dry Fit Premium</p>
     </header>
+
     <div class="container">
         <div class="grid-produtos">
+
             <!-- ESPANHA -->
             <div class="card-produto">
+                <div class="imagem-container">
+                    <span class="tag-promocao">Oferta</span>
+                    <img src="./espanha.jpeg" alt="Camisa Espanha Titular">
+                </div>
                 <div class="conteudo-produto">
                     <h2 class="titulo-produto">Camisa Espanha 2026</h2>
+                    <p class="descricao-produto">Tecido Dry Fit premium, altamente respirável. Modelo com escudo e patrocínio totalmente bordados em alta definição.</p>
                     <div class="precos"><div class="preco-de">R$ 100,00</div><div class="preco-por">R$ 80,00</div></div>
+                    <div class="secao-tamanhos">
+                        <label>Tamanho:</label>
+                        <div class="lista-tamanhos">
+                            <div class="tam-opcao">P</div><div class="tam-opcao">M</div><div class="tam-opcao disponivel">G</div><div class="tam-opcao">GG</div>
+                        </div>
+                        <div class="aviso-estoque">⚠️ Última unidade disponível no tamanho G</div>
+                    </div>
                     <button onclick="redirecionarObjeto('Camisa Espanha 2026', 'G', 'R$ 80,00')" class="btn-comprar">Comprar via WhatsApp</button>
                 </div>
             </div>
 
             <!-- CROÁCIA -->
             <div class="card-produto">
+                <div class="imagem-container">
+                    <span class="tag-promocao">Oferta</span>
+                    <img src="./croacia.jpeg" alt="Camisa Croácia Titular">
+                </div>
                 <div class="conteudo-produto">
                     <h2 class="titulo-produto">Camisa Croácia 2024/25</h2>
+                    <p class="descricao-produto">Tecido Dry Fit premium, altamente respirável. Modelo com escudo e patrocínio totalmente bordados em alta definição.</p>
                     <div class="precos"><div class="preco-de">R$ 100,00</div><div class="preco-por">R$ 80,00</div></div>
+                    <div class="secao-tamanhos">
+                        <label>Tamanho:</label>
+                        <div class="lista-tamanhos">
+                            <div class="tam-opcao">P</div><div class="tam-opcao">M</div><div class="tam-opcao disponivel">G</div><div class="tam-opcao">GG</div>
+                        </div>
+                        <div class="aviso-estoque">⚠️ Última unidade disponível no tamanho G</div>
+                    </div>
                     <button onclick="redirecionarObjeto('Camisa Croácia 2024/25', 'G', 'R$ 80,00')" class="btn-comprar">Comprar via WhatsApp</button>
                 </div>
             </div>
-
             <!-- VASCO -->
             <div class="card-produto">
+                <div class="imagem-container">
+                    <span class="tag-promocao">Oferta</span>
+                    <img src="./vasco.jpeg" alt="Camisa Vasco Oficial">
+                </div>
                 <div class="conteudo-produto">
                     <h2 class="titulo-produto">Camisa Vasco 2026/27</h2>
+                    <p class="descricao-produto">Tecido Dry Fit premium, altamente respirável. Modelo com escudo e patrocínio totalmente bordados em alta definição.</p>
                     <div class="precos"><div class="preco-de">R$ 100,00</div><div class="preco-por">R$ 80,00</div></div>
+                    <div class="secao-tamanhos">
+                        <label>Tamanho:</label>
+                        <div class="lista-tamanhos">
+                            <div class="tam-opcao">P</div><div class="tam-opcao disponivel">M</div><div class="tam-opcao">G</div><div class="tam-opcao">GG</div>
+                        </div>
+                        <div class="aviso-estoque">⚠️ Última unidade disponível no tamanho M</div>
+                    </div>
                     <button onclick="redirecionarObjeto('Camisa Vasco 2026/27', 'M', 'R$ 80,00')" class="btn-comprar">Comprar via WhatsApp</button>
                 </div>
             </div>
 
             <!-- PALMEIRAS -->
             <div class="card-produto">
+                <div class="imagem-container">
+                    <span class="tag-promocao">Oferta</span>
+                    <img src="./palmeiras.jpeg" alt="Camisa Palmeiras Branca">
+                </div>
                 <div class="conteudo-produto">
                     <h2 class="titulo-produto">Camisa Palmeiras 2025/26</h2>
+                    <p class="descricao-produto">Tecido Dry Fit premium, altamente respirável. Modelo com escudo e patrocínio totalmente bordados em alta definição.</p>
                     <div class="precos"><div class="preco-de">R$ 100,00</div><div class="preco-por">R$ 80,00</div></div>
+                    <div class="secao-tamanhos">
+                        <label>Tamanho:</label>
+                        <div class="lista-tamanhos">
+                            <div class="tam-opcao">P</div><div class="tam-opcao">M</div><div class="tam-opcao">G</div><div class="tam-opcao disponivel">GG</div>
+                        </div>
+                        <div class="aviso-estoque">⚠️ Última unidade disponível no tamanho GG</div>
+                    </div>
                     <button onclick="redirecionarObjeto('Camisa Palmeiras 2025/26', 'GG', 'R$ 80,00')" class="btn-comprar">Comprar via WhatsApp</button>
                 </div>
             </div>
-            </div>
+
+        </div>
     </div>
 
     <script>
         function redirecionarObjeto(nome, tamanho, valor) {
+            // Teu número pessoal limpo e direto
             var fone = "559885026886";
             
+            // Mensagem ajustada com as quebras e o aviso dry fit
             var msg = "Olá! Gostaria de comprar o seguinte produto do catálogo:\n\n" +
-                      "⚽ Produto: " + nome + "\n" +
-                      "📏 Tamanho: " + tamanho + "\n" +
-                      "💰 Valor: " + valor + "\n\n" +
-                      "⚠️ Lembre-se de que são camisas primeira linha no tecido dry fit e não oficiais.";
+                      "⚽ *Produto:* " + nome + "\n" +
+                      "📏 *Tamanho:* " + tamanho + "\n" +
+                      "💰 *Valor:* " + valor + "\n\n" +
+                      "⚠️ _Lembre-se de que são camisas primeira linha no tecido dry fit e não oficiais._";
             
             var msgCodificada = encodeURIComponent(msg);
+
+            // Estrutura padrão oficial de envio da API do WhatsApp
             var urlUniversal = "https://whatsapp.com" + fone + "&text=" + msgCodificada;
 
+            // Altera o endereço da própria página atual (evita bloqueios de pop-up)
             window.location.href = urlUniversal;
         }
     </script>
+
 </body>
 </html>
