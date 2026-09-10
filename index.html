@@ -97,7 +97,7 @@
                     <div class="secao-tamanhos">
                         <label>Tamanho:</label>
                         <div class="lista-tamanhos">
-                            <div class="tam-opcao">P</div><div class="tam-opcao disponivel">M</div><div class="tam-opcao">G</div><div class="tam-opcao">GG</div>
+                            <div class="tam-opcao">P</div><div class="tam-opcao disponibilizar">M</div><div class="tam-opcao">G</div><div class="tam-opcao">GG</div>
                         </div>
                         <div class="aviso-estoque">⚠️ Última unidade disponível no tamanho M</div>
                     </div>
@@ -131,16 +131,16 @@
 
     <script>
         function redirecionarObjeto(nome, tamanho, valor) {
-            // Seu número pessoal atualizado e configurado
+            // Seu número pessoal inserido diretamente e sem variáveis com chaves para não falhar
             const fone = "559885026886";
             
-            // Texto adaptado com quebras de linha e o lembrete de não oficial/dry fit
+            // Texto adaptado com quebras de linha e o lembrete de não oficial
             const msg = `Olá! Gostaria de comprar o seguinte produto do catálogo:\n\n⚽ *Produto:* ${nome}\n📏 *Tamanho:* ${tamanho}\n💰 *Valor:* ${valor}\n\n⚠️ _Lembre-se de que são camisas primeira linha no tecido dry fit e não oficiais._`;
             
             const msgCodificada = encodeURIComponent(msg);
 
-            // Link universal atualizado usando a API padrão wa.me (funciona 100% em qualquer dispositivo)
-            const urlUniversal = `https://wa.me{fone}?text=${msgCodificada}`;
+            // Link corrigido unindo as variáveis de forma tradicional e limpa
+            const urlUniversal = "https://wa.me" + fone + "?text=" + msgCodificada;
 
             window.open(urlUniversal, '_blank');
         }
