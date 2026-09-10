@@ -131,10 +131,10 @@
 
     <script>
         function redirecionarObjeto(nome, tamanho, valor) {
-            // Teu número pessoal direto, sem formatação ou espaços
+            // Número pessoal sem espaços, traços ou parênteses
             var fone = "559885026886";
             
-            // Texto adaptado com o aviso de camisa primeira linha
+            // Texto formatado com as quebras de linha corretas (\n)
             var msg = "Olá! Gostaria de comprar o seguinte produto do catálogo:\n\n" +
                       "⚽ *Produto:* " + nome + "\n" +
                       "📏 *Tamanho:* " + tamanho + "\n" +
@@ -143,7 +143,7 @@
             
             var msgCodificada = encodeURIComponent(msg);
 
-            // LINK TOTALMENTE CORRIGIDO: Estrutura oficial da API do WhatsApp
+            // Link com a sintaxe padrão do WhatsApp Web e Mobile que força o redirecionamento correto
             var urlUniversal = "https://whatsapp.com" + fone + "&text=" + msgCodificada;
 
             window.open(urlUniversal, '_blank');
