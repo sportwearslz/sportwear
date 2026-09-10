@@ -129,27 +129,16 @@
         </div>
     </div>
 
-    <!-- SCRIPT DE FILTRAGEM INDEPENDENTE -->
     <script>
         function redirecionarObjeto(nome, tamanho, valor) {
             const fone = "5511980597897";
             const msg = `Olá! Gostaria de comprar o seguinte produto do catálogo:\n\n👕 *Produto:* ${nome}\n📏 *Tamanho:* ${tamanho}\n💰 *Valor:* ${valor}`;
             const msgCodificada = encodeURIComponent(msg);
 
-            // Verifica se o dispositivo do cliente é um celular/tablet ou PC
-            const testeDispositivo = /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
+            // Esse link aqui embaixo é o link universal oficial do WhatsApp que não falha nem no PC nem no celular
+            const urlUniversal = `https://whatsapp.com{fone}&text=${msgCodificada}&type=phone_number&app_absent=0`;
 
-            let urlFinal = "";
-
-            if (testeDispositivo) {
-                // Se for celular, dispara o protocolo interno nativo do aplicativo
-                urlFinal = `whatsapp://send?phone=${fone}&text=${msgCodificada}`;
-            } else {
-                // Se for computador, abre diretamente na URL de envio do WhatsApp Web, pulando a tela intermediária
-                urlFinal = `https://whatsapp.com{fone}&text=${msgCodificada}`;
-            }
-
-            window.open(urlFinal, '_blank');
+            window.open(urlUniversal, '_blank');
         }
     </script>
 
