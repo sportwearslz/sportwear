@@ -65,7 +65,8 @@
                         </div>
                         <div class="aviso-estoque">⚠️ Última unidade disponível no tamanho G</div>
                     </div>
-                    <button onclick="redirecionarObjeto('Camisa Espanha Titular 2022/2023', 'G', 'R$ 79,99')" class="btn-comprar">Comprar via WhatsApp</button>
+                    <!-- Adicionei o 'espanha.jpeg' no final do onclick -->
+                    <button onclick="redirecionarObjeto('Camisa Espanha Titular 2022/2023', 'G', 'R$ 79,99', 'espanha.jpeg')" class="btn-comprar">Comprar via WhatsApp</button>
                 </div>
             </div>
 
@@ -92,7 +93,8 @@
                         </div>
                         <div class="aviso-estoque">⚠️ Última unidade disponível no tamanho G</div>
                     </div>
-                    <button onclick="redirecionarObjeto('Camisa Croácia Titular 2022/2023', 'G', 'R$ 79,99')" class="btn-comprar">Comprar via WhatsApp</button>
+                    <!-- Adicionei o 'croacia.jpeg' no final do onclick -->
+                    <button onclick="redirecionarObjeto('Camisa Croácia Titular 2022/2023', 'G', 'R$ 79,99', 'croacia.jpeg')" class="btn-comprar">Comprar via WhatsApp</button>
                 </div>
             </div>
 
@@ -119,7 +121,8 @@
                         </div>
                         <div class="aviso-estoque">⚠️ Última unidade disponível no tamanho M</div>
                     </div>
-                    <button onclick="redirecionarObjeto('Camisa Vasco Terceiro Uniforme 2023/2024', 'M', 'R$ 79,99')" class="btn-comprar">Comprar via WhatsApp</button>
+                    <!-- Adicionei o 'vasco.jpeg' no final do onclick -->
+                    <button onclick="redirecionarObjeto('Camisa Vasco Terceiro Uniforme 2023/2024', 'M', 'R$ 79,99', 'vasco.jpeg')" class="btn-comprar">Comprar via WhatsApp</button>
                 </div>
             </div>
 
@@ -146,7 +149,8 @@
                         </div>
                         <div class="aviso-estoque">⚠️ Última unidade disponível no tamanho GG</div>
                     </div>
-                    <button onclick="redirecionarObjeto('Camisa Palmeiras Branca 2024', 'GG', 'R$ 79,99')" class="btn-comprar">Comprar via WhatsApp</button>
+                    <!-- Adicionei o 'palmeiras.jpeg' no final do onclick -->
+                    <button onclick="redirecionarObjeto('Camisa Palmeiras Branca 2024', 'GG', 'R$ 79,99', 'palmeiras.jpeg')" class="btn-comprar">Comprar via WhatsApp</button>
                 </div>
             </div>
 
@@ -154,14 +158,26 @@
     </div>
 
     <script>
-        function redirecionarObjeto(nome, tamanho, valor) {
+        function redirecionarObjeto(nome, tamanho, valor, imagem) {
             // Seu número pessoal atualizado
             const fone = "559885026886";
             
-            // Link do seu catálogo atualizado
+            // Links base do seu catálogo
             const linkCatalogo = "https://sportwearslz.github.io/sportwear/";
+            // Monta o link direto da imagem que o cliente clicou
+            const linkImagem = `https://sportwearslz.github.io/sportwear/${imagem}`;
             
-            const msg = `Olá! Gostaria de comprar o seguinte produto do catálogo:\n\n👕 *Produto:* ${nome}\n📏 *Tamanho:* ${tamanho}\n💰 *Valor:* ${valor}\n\n🔗 *Voltar ao catálogo:* ${linkCatalogo}`;
+            // Montando a mensagem com formatação profissional
+            const msg = `🛒 *NOVO PEDIDO - SPORTWEAR* 🛒\n` +
+                        `-------------------------\n` +
+                        `👕 *Produto:* ${nome}\n` +
+                        `📏 *Tamanho:* ${tamanho}\n` +
+                        `💰 *Valor:* ${valor}\n` +
+                        `-------------------------\n` +
+                        `📸 *Foto do produto:* ${linkImagem}\n` +
+                        `🔗 *Voltar ao catálogo:* ${linkCatalogo}\n\n` +
+                        `Olá! Tenho interesse neste produto e gostaria de finalizar a compra.`;
+            
             const msgCodificada = encodeURIComponent(msg);
             
             // Link universal oficial do WhatsApp
