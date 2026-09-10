@@ -59,7 +59,8 @@
                         </div>
                         <div class="aviso-estoque">⚠️ Última unidade disponível no tamanho G</div>
                     </div>
-                    <button onclick="redirecionarObjeto('Camisa Espanha 2026', 'G', 'R$ 80,00')" class="btn-comprar">Comprar via WhatsApp</button>
+                    <!-- Link nativo direto sem JavaScript -->
+                    <a href="https://wa.me._" target="_blank" class="btn-comprar">Comprar via WhatsApp</a>
                 </div>
             </div>
 
@@ -80,7 +81,8 @@
                         </div>
                         <div class="aviso-estoque">⚠️ Última unidade disponível no tamanho G</div>
                     </div>
-                    <button onclick="redirecionarObjeto('Camisa Croácia 2024/25', 'G', 'R$ 80,00')" class="btn-comprar">Comprar via WhatsApp</button>
+                    <!-- Link nativo direto sem JavaScript -->
+                    <a href="https://wa.me._" target="_blank" class="btn-comprar">Comprar via WhatsApp</a>
                 </div>
             </div>
 
@@ -101,7 +103,8 @@
                         </div>
                         <div class="aviso-estoque">⚠️ Última unidade disponível no tamanho M</div>
                     </div>
-                    <button onclick="redirecionarObjeto('Camisa Vasco 2026/27', 'M', 'R$ 80,00')" class="btn-comprar">Comprar via WhatsApp</button>
+                    <!-- Link nativo direto sem JavaScript -->
+                    <a href="https://wa.me._" target="_blank" class="btn-comprar">Comprar via WhatsApp</a>
                 </div>
             </div>
 
@@ -122,33 +125,4 @@
                         </div>
                         <div class="aviso-estoque">⚠️ Última unidade disponível no tamanho GG</div>
                     </div>
-                    <button onclick="redirecionarObjeto('Camisa Palmeiras 2025/26', 'GG', 'R$ 80,00')" class="btn-comprar">Comprar via WhatsApp</button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-    <script>
-        function redirecionarObjeto(nome, tamanho, valor) {
-            // Número pessoal sem espaços, traços ou parênteses
-            var fone = "559885026886";
-            
-            // Texto formatado com as quebras de linha corretas (\n)
-            var msg = "Olá! Gostaria de comprar o seguinte produto do catálogo:\n\n" +
-                      "⚽ *Produto:* " + nome + "\n" +
-                      "📏 *Tamanho:* " + tamanho + "\n" +
-                      "💰 *Valor:* " + valor + "\n\n" +
-                      "⚠️ _Lembre-se de que são camisas primeira linha no tecido dry fit e não oficiais._";
-            
-            var msgCodificada = encodeURIComponent(msg);
-
-            // Link com a sintaxe padrão do WhatsApp Web e Mobile que força o redirecionamento correto
-            var urlUniversal = "https://whatsapp.com" + fone + "&text=" + msgCodificada;
-
-            window.open(urlUniversal, '_blank');
-        }
-    </script>
-
-</body>
-</html>
+                    <!-- Link nativo direto sem JavaScript -->
